@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+outputs/
+web/data/
+web/runtime/
+web/standalone_models/
+web/dist/
+web/backups/
+web/test-results/
+*.sqlite3
+.DS_Store

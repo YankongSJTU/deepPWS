@@ -1,0 +1,8 @@
+.clinical-review .estimate-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:22px 0}
+.estimate-summary>div{padding:16px;background:#f4f7ef;border:1px solid #e2e9df;border-radius:10px;min-width:0}
+.estimate-summary small{display:block;font-size:11px;color:#738078;line-height:1.6}
+.estimate-summary b{display:block;margin-top:8px;color:#284f43;font-size:20px}
+.clinical-review .form-grid{margin:24px 0}
+.clinical-review .comparison-note{line-height:1.8}
+.clinical-review .candidate-confirmation .candidate-help{max-width:60%;margin-top:0}
+@media(max-width:700px){.clinical-review .estimate-summary{grid-template-columns:1fr;gap:9px}.clinical-review .form-grid{grid-template-columns:1fr}.clinical-review .candidate-confirmation .candidate-help{max-width:100%}.estimate-summary b{font-size:17px}}

@@ -1,0 +1,176 @@
+{
+  "version": "2026.11.17-pooled-clinical1",
+  "protocol": "pooled multicentre baseline cohort, 1,003 patients; patient-grouped 10-fold OOF metrics in the manuscript; these weights are the full-cohort serving refit",
+  "inputs": "before-image CLIP768 + FaRL512 globals and FaRL 16x768 local tokens (frozen encoders)",
+  "threshold": 0.5,
+  "label_maps": {
+    "colour": [
+      "粉红",
+      "红色",
+      "紫红"
+    ],
+    "side": [
+      "左",
+      "右",
+      "双侧"
+    ],
+    "nerve": [
+      "V1",
+      "V2",
+      "V3"
+    ],
+    "regions": [
+      "forehead",
+      "cheek",
+      "jaw_chin",
+      "temple",
+      "periocular",
+      "nose",
+      "lip",
+      "ear",
+      "neck",
+      "scalp",
+      "trunk_limb"
+    ]
+  },
+  "members": {
+    "colour": [
+      {
+        "variant": "single_pca128",
+        "seeds": [
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027
+        ],
+        "family": "single",
+        "pca_dim": 128,
+        "hidden": 96
+      },
+      {
+        "variant": "single_pca192",
+        "seeds": [
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027
+        ],
+        "family": "single",
+        "pca_dim": 192,
+        "hidden": 96
+      },
+      {
+        "variant": "joint_pca64",
+        "seeds": [
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027
+        ],
+        "family": "joint",
+        "pca_dim": 64,
+        "hidden": 96
+      },
+      {
+        "variant": "joint_pca128",
+        "seeds": [
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027
+        ],
+        "family": "joint",
+        "pca_dim": 128,
+        "hidden": 96
+      }
+    ],
+    "side": [
+      {
+        "variant": "joint_pca128",
+        "seeds": [
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027
+        ],
+        "family": "joint",
+        "pca_dim": 128,
+        "hidden": 96
+      }
+    ],
+    "nerve": [
+      {
+        "variant": "single_pca128",
+        "seeds": [
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027
+        ],
+        "family": "single",
+        "pca_dim": 128,
+        "hidden": 96
+      },
+      {
+        "variant": "single_pca192",
+        "seeds": [
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027
+        ],
+        "family": "single",
+        "pca_dim": 192,
+        "hidden": 96
+      },
+      {
+        "variant": "joint_pca64",
+        "seeds": [
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027
+        ],
+        "family": "joint",
+        "pca_dim": 64,
+        "hidden": 96
+      },
+      {
+        "variant": "joint_pca128",
+        "seeds": [
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027
+        ],
+        "family": "joint",
+        "pca_dim": 128,
+        "hidden": 96
+      }
+    ],
+    "regions": [
+      {
+        "variant": "single_pca128",
+        "seeds": [
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027
+        ],
+        "family": "single",
+        "pca_dim": 128,
+        "hidden": 96
+      }
+    ]
+  }
+}

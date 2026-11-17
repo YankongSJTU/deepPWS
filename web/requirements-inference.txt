@@ -1,0 +1,18 @@
+-r requirements-web.txt
+torch==2.6.0
+torchvision==0.21.0
+pandas>=2.2,<3
+scipy>=1.13,<2
+scikit-learn>=1.5,<2
+safetensors>=0.5,<1
+omegaconf==2.3.0
+einops>=0.8,<1
+accelerate>=1.6,<2
+diffusers==0.32.2
+transformers>=4.46,<5
+trimesh>=4.5,<5
+opencv-python-headless>=4.10,<5
+matplotlib>=3.9,<4
+plyfile>=1,<2
+jaxtyping>=0.2,<1
+# PyTorch3D must match the installed PyTorch/CUDA build; see README.

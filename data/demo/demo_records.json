@@ -1,0 +1,74 @@
+[
+  {
+    "patient_id": "demo_p01",
+    "before": "images/demo_p01_before.jpg",
+    "after": "images/demo_p01_after.jpg",
+    "age": 9,
+    "skin_type": "III",
+    "site": "cheek",
+    "trigeminal_zone": "V2",
+    "colour_phenotype": "red",
+    "color_score": 3.7,
+    "area_score": 4.1
+  },
+  {
+    "patient_id": "demo_p02",
+    "before": "images/demo_p02_before.jpg",
+    "after": "images/demo_p02_after.jpg",
+    "age": 4,
+    "skin_type": "III",
+    "site": "cheek",
+    "trigeminal_zone": "V2",
+    "colour_phenotype": "purple",
+    "color_score": 3.5,
+    "area_score": 5.1
+  },
+  {
+    "patient_id": "demo_p03",
+    "before": "images/demo_p03_before.jpg",
+    "after": "images/demo_p03_after.jpg",
+    "age": 13,
+    "skin_type": "III",
+    "site": "nose",
+    "trigeminal_zone": "V1",
+    "colour_phenotype": "red",
+    "color_score": 1.9,
+    "area_score": 2.3
+  },
+  {
+    "patient_id": "demo_p04",
+    "before": "images/demo_p04_before.jpg",
+    "after": "images/demo_p04_after.jpg",
+    "age": 37,
+    "skin_type": "IV",
+    "site": "forehead",
+    "trigeminal_zone": "V1",
+    "colour_phenotype": "pink",
+    "color_score": 6.2,
+    "area_score": 5.8
+  },
+  {
+    "patient_id": "demo_p05",
+    "before": "images/demo_p05_before.jpg",
+    "after": "images/demo_p05_after.jpg",
+    "age": 24,
+    "skin_type": "III",
+    "site": "jaw",
+    "trigeminal_zone": "V3",
+    "colour_phenotype": "red",
+    "color_score": 5.9,
+    "area_score": 5.9
+  },
+  {
+    "patient_id": "demo_p06",
+    "before": "images/demo_p06_before.jpg",
+    "after": "images/demo_p06_after.jpg",
+    "age": 35,
+    "skin_type": "III",
+    "site": "cheek",
+    "trigeminal_zone": "V2",
+    "colour_phenotype": "purple",
+    "color_score": 1.9,
+    "area_score": 2.6
+  }
+]

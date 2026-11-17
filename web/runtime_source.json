@@ -1,0 +1,13 @@
+{
+  "source_scripts": "E:\\faceBA\\hugenew",
+  "files": [
+    "local_real_features.py",
+    "aligned_lab_features.py",
+    "formal3d_batch.py",
+    "formal3d_uv_batch.py",
+    "dense_regional_features.py",
+    "inspect_flame_template.py",
+    "farl_encoder.py"
+  ],
+  "bundled_runtime": true
+}

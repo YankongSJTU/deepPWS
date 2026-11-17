@@ -1,0 +1,41 @@
+{
+  "version": "2026.10.26-clinical1",
+  "input": "before CLIP768 + FaRL512; no after images or manual clinical fields",
+  "age_range": [
+    1.0,
+    61.0
+  ],
+  "skin_labels": [
+    "III",
+    "IV"
+  ],
+  "predict_sex": false,
+  "skin_interpretation": "estimate of recorded III/IV label; not measured UV response",
+  "sha256": "87073b11b98f97b8098e3c102b00eb865c3395efb484099a1fff6c9e4495db22",
+  "validation": {
+    "Shanghai_patient_group_oof": {
+      "records": 813,
+      "age_mae_years": 2.8245782033983633,
+      "age_median_baseline_mae": 8.801968019680197,
+      "skin_macro_f1": 0.634324209590038,
+      "skin_majority_baseline_macro_f1": 0.45436241610738254,
+      "skin_auc": 0.7432770006082196
+    },
+    "Chongqing": {
+      "records": 101,
+      "age_mae_years": 2.841064934683318,
+      "age_median_baseline_mae": 7.841584158415841,
+      "skin_macro_f1": 0.4898989898989899,
+      "skin_majority_baseline_macro_f1": 0.5,
+      "skin_auc": null
+    },
+    "Zhejiang": {
+      "records": 79,
+      "age_mae_years": 3.3795262831675856,
+      "age_median_baseline_mae": 9.177215189873417,
+      "skin_macro_f1": 0.651335656213705,
+      "skin_majority_baseline_macro_f1": 0.45517241379310347,
+      "skin_auc": 0.8327505827505828
+    }
+  }
+}

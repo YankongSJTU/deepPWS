@@ -1,0 +1,79 @@
+{
+  "version": "2026.10.25",
+  "id": "faceba-clinical-heads-v2",
+  "name": "治疗前临床特征候选识别",
+  "members": [
+    {
+      "file": "member_20261023.npz",
+      "sha256": "cc092894c5756fa565d10de3fc5ed5139eccebe91705e88cd538018d1d85cfa0",
+      "source_seed": 20261023
+    },
+    {
+      "file": "member_20261024.npz",
+      "sha256": "7e4d79302b8f6b68bee87c4cbdccbbc544507d626b3fcc4564df138db1596880",
+      "source_seed": 20261024
+    },
+    {
+      "file": "member_20261025.npz",
+      "sha256": "eef3b583651c6d8ddfdfbf1e24897faf1f85bd8a250efacf8643d53f4cf39d17",
+      "source_seed": 20261025
+    }
+  ],
+  "profiles": {
+    "source": {
+      "name": "上海源模型（默认）",
+      "description": "颜色、左右、神经分区及区域范围候选。"
+    },
+    "chongqing": {
+      "name": "重庆研究适配",
+      "description": "仅颜色使用重庆30患者组微调候选；其余任务沿用源模型。"
+    },
+    "zhejiang": {
+      "name": "浙江研究适配",
+      "description": "仅神经分区使用浙江30患者组输出头微调候选；其余任务沿用源模型。"
+    }
+  },
+  "labels": {
+    "colour": [
+      "粉红",
+      "红色",
+      "紫红"
+    ],
+    "side": [
+      "左",
+      "右",
+      "双侧"
+    ],
+    "nerve": [
+      "V1",
+      "V2",
+      "V3"
+    ],
+    "regions": [
+      "额部",
+      "颊/颧部",
+      "下颌/颏部",
+      "颞部",
+      "眼周",
+      "鼻部",
+      "唇部",
+      "耳周",
+      "颈部",
+      "头皮",
+      "躯干/四肢"
+    ]
+  },
+  "default_profile": "source",
+  "features": "before CLIP768 + before FaRL512 + first-before raw FaRL4x4 tokens; no after-image or clinical inputs",
+  "preprocessing": "source-only frozen scaling/PCA64",
+  "ensemble_members": 3,
+  "probabilities_calibrated": false,
+  "fit_snapshot": "predeclared target split seed20261023,30 patient groups; no best-test-seed selection",
+  "adaptation_status": "exploratory; external patients previously inspected; not independent blind validation",
+  "main_efficacy_model": "Original Ridge weights unchanged; missing age/skin use separately marked image estimates; colour/nerve only after confirmation",
+  "unsupported_tasks": [
+    "segmentation",
+    "sex_inference"
+  ],
+  "separate_estimation_model": "demographic_models/model.json; age and recorded III/IV labels only"
+}

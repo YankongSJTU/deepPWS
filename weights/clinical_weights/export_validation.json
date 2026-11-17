@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "max_abs_probability_error": 4.470348358154297e-07,
+  "errors": {
+    "source/colour": 4.470348358154297e-07,
+    "source/regions": 2.682209014892578e-07,
+    "source/side": 4.172325134277344e-07,
+    "source/nerve": 2.980232238769531e-07,
+    "chongqing/colour": 3.5762786865234375e-07,
+    "zhejiang/nerve": 1.7881393432617188e-07
+  },
+  "tolerance": 0.0001,
+  "profile_changes_only_intended_head": true,
+  "no_pickle_or_torch_needed_for_clinical_serving": true,
+  "contains_patient_records_or_images": false,
+  "bytes": 14726473
+}
